@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora de Andaimes</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <div class="flex flex-col gap-5 w-full">
+            <div
+                class="border-b-2 border-gray-500 bg-slate-200 w-full p-3 text-center font-bold"
+            >
+                <span class="text-red-500">AMÉRICA</span>
+                <span class="text-blue-500">MATERIAIS</span>
+            </div>
+            <div class="p-3 h-screen grid items-center justify-center">
+                <div
+                    class="border border-2 p-4 bg-white shadow-lg rounded-xl w-[350px]"
+                >
+                    <form action="">
+                        <div class="flex flex-col gap-3">
+                            <div class="flex flex-col gap-1">
+                                <label
+                                    for="pecas"
+                                    class="font-bold text-gray-600"
+                                    >Quantidade de peças:</label
+                                >
+                                <input
+                                    type="number"
+                                    class="outline-blue-500 bg-gray-100 p-2 rounded-sm m-0 border-2"
+                                    placeholder="Digite quantas peças.."
+                                    id="pecas"
+                                />
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label
+                                    for="pecas"
+                                    class="font-bold text-gray-600"
+                                    >Quantidade de dias:</label
+                                >
+                                <input
+                                    type="number"
+                                    class="outline-blue-500 bg-gray-100 p-2 rounded-sm border-2"
+                                    placeholder="Digite Quantidade de dias.."
+                                    id="dias"
+                                />
+                            </div>
+                            <div class="flex flex-col gap-1">
+                                <label
+                                    for="pecas"
+                                    class="font-bold text-gray-600"
+                                    >Preço da diária:</label
+                                >
+                                <input
+                                    type="number"
+                                    class="outline-blue-500 bg-gray-100 p-2 rounded-sm border-2"
+                                    placeholder="Digite Preço da diária.."
+                                    id="preco"
+                                />
+                            </div>
+                            <div
+                                class="font-bold flex justify-between px-2 my-2"
+                            >
+                                <div class="text-gray-600">Valor Total:</div>
+                                <div class="text-gray-600">
+                                    R$: <span id="total">00</span>
+                                </div>
+                            </div>
+                            <button
+                                class="bg-red-500 hover:bg-red-700 p-2 transition-all rounded-xl text-white font-bold"
+                                id="butao"
+                            >
+                                Calcular
+                            </button>
+                            <button
+                                class="bg-gray-500 hover:bg-gray-700 p-2 transition-all rounded-xl text-white font-bold"
+                                id="butao"
+                                type="reset"
+                            >
+                                Resetar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="./scipt.js"></script>
+    </body>
+</html>
